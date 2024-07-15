@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+	line-height: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Aqui empieza el header */
+.headertop{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    height: 5rem;
+}
+.headertop a {
+    display: flex;
+    gap: .8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.headertop a img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+/*Aqui empieza el main container */
+
+.main-container-clock{
+    height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;   
+    
+}
+.main-container-clock article{
+    color: white;
+    max-width: 25rem;
+    max-height: 15rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: grey;
+    border-radius: .6rem;
+    padding: 1rem 1.2rem;
+    
+}
+
+.main-container-clock article p{
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.main-container-clock article h2{
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+.main-container-clock article h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
