@@ -14,7 +14,7 @@ const getHour = () => {
     }
     const dateEnglishBritain = getHour.toLocaleDateString('en-GB')
     date.innerHTML = dateEnglishBritain
-
+    console.log(hour);
     if (hour > 0 && hour <= 700) {
         message.textContent = 'Es hora de descansar. Apaga y sigue mañana.'
     } else if (hour > 700 && hour <= 1200) {
@@ -27,7 +27,7 @@ const getHour = () => {
         message.textContent = 'Buenas tardes, el último empujón.'
     } else if (hour > 1800 && hour <= 2000) {
         message.textContent = 'Esto ya son horas extras, ... piensa en parar pronto.'
-    } else if (hour > 2200 && hour <= 0) {
+    } else if (hour >= 2000 && hour <= 0) {
         message.textContent = 'Buenas noches, es hora de pensar en parar y descansar.'
     } 
    

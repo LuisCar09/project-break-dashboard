@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/links.css">
     <title>Document</title>
 </head>
-<body>
-    <script src="../../script.js"></script>
+<body style="background-color:grey;">
+    <header class="headertop">
+
+        <a  href="https://www.google.com/" target="_blank">
+            <img src="../assets/rocket.png" alt="rocket">
+            <span>go home</span>
+        </a>
+        
+    </header>
+    
+    <main>
+        <section class="section-linkContainer">
+            <article class="link-container">
+                <div class="title-container">
+                    <h2 class="title-link">A&ntilde;ade tu enlace de inter&eacute;s</h2>
+                    <img src="../assets/link.png" alt="link-image">
+                </div>
+                <form class="form-link" action="#" >
+                    <input id="pageName" type="text" placeholder="Nombre de tu enlace" required>
+                    <input id="url" type="text" placeholder="Pega aquí la URL" required>
+                    <input id="inputSubmit" class="inputSubmit" type="submit" value="Añadir enlace" >
+                </form>
+
+                <ul id="link-container--list" class="link-container--list">
+                    
+                        <!-- <li>
+                            <a  href="https://www.instagram.com/" target='_blank'>Ig</a>
+                            <div id="${pageUrl}" class="close">x</div>
+                        </li> -->
+                    
+                </ul>
+            </article>
+        </section> 
+    </main>
+    <script src="../js/links.js"></script>
 </body>
 </html>
