@@ -27,7 +27,7 @@ const getHour = () => {
         message.textContent = 'Buenas tardes, el último empujón.'
     } else if (hour > 1800 && hour <= 2000) {
         message.textContent = 'Esto ya son horas extras, ... piensa en parar pronto.'
-    } else if (hour >= 2000 && hour <= 0) {
+    } else if (hour > 2000 && hour <= 2400) {
         message.textContent = 'Buenas noches, es hora de pensar en parar y descansar.'
     } 
    
