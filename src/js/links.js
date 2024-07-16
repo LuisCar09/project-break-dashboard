@@ -33,7 +33,7 @@ const showItems = () => {
         const {pageName,pageUrl} = item
         
         itemContainer.innerHTML += `<li>
-                                        <a  href="${pageName}" target='_blank'>${pageName}</a>
+                                        <a  href="${pageUrl}" target='_blank'>${pageName}</a>
                                         <div id="${pageUrl}" class="close">x</div>
                                     </li>`
     })
