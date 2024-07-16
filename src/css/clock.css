@@ -35,6 +35,11 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-image: url('https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 ol, ul {
 	list-style: none;
@@ -52,34 +57,34 @@ table {
 	border-spacing: 0;
 }
 
-/* Aqui empieza el header */
+/* here start header */
 .headertop{
-    background-color: black;
+    
     display: flex;
     align-items: center;
     color: white;
     padding: 1rem 1rem;
-    font-size: 1.6rem;
-    height: 5rem;
+    font-size: 1.8rem;
+    height: 6.5rem;
 }
 .headertop a {
     display: flex;
     gap: .8rem;
     text-transform: uppercase;
     cursor: pointer;
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 .headertop a img{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 /*Aqui empieza el main container */
 
 .main-container-clock{
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 13rem);
     display: flex;
     align-items: center;   
     
@@ -90,30 +95,55 @@ table {
     align-items: center;
     justify-content: center;
     color: white;
-    max-width: 25rem;
-    max-height: 17rem;
+    max-width: 30rem;
+    max-height: 20rem;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-color: grey;
+    background-color: #33333393;
     border-radius: .6rem;
-    padding: 1rem 1.2rem;
-    
+    padding: 1rem 0rem;
+    color:#ffffffb0;
 }
 
 .main-container-clock article p{
-    font-size: 1.6rem;
-    margin-bottom: 0.4rem;
-    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    text-align: start;
 }
 
 .main-container-clock article h2{
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: .2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 .main-container-clock article h3{
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
 
+}
+
+
+/* Aqui empiza el footer */
+.footer{
+    height: 6.5rem;
+    padding: 0 1rem 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-image--container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
+    border-bottom: 1px solid white;
+    padding: 0 1rem 1rem 0;
+}
+.footer-image--container img{
+    filter: invert(100%);
+    width: 4rem;
+    height: 4rem;
 }
