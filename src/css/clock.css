@@ -67,6 +67,8 @@ table {
     gap: .8rem;
     text-transform: uppercase;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 .headertop a img{
