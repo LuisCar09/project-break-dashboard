@@ -2,19 +2,12 @@ const API = 'https://api.weatherapi.com'
 const apiKey = 'e77691c5fae848ed8b6162904241407'
 const mainContainer = document.querySelector('.container')
 const forecastContainer = document.querySelector('.forecastContainer')
-// const city = document.querySelector('.city')
-// const country = document.querySelector('.country')
-// const weather = document.querySelector('.weather')
-// const precipitation = document.querySelector('.precipitation')
-// const humidity = document.querySelector('.humidity')
-// const wind = document.querySelector('.wind')
-// const picture = document.querySelector('.picture')
-// const temperature = document.querySelector('.temperature')
+
 const fetchWeather = async () => {
 
     const getData = await fetch(`${API}/v1/forecast.json?key=${apiKey}&q=Tenerife&aqi=no`)
     const data = await getData.json()
-
+    console.log(data);
 
     const dayWeather = {
         city: data.location.name,
@@ -50,7 +43,7 @@ const showWeather = (weatherFeatures) => {
             <p>Wind: <span class="wind">${wind}</span></p>
         </div>
         `
-
+    
     
     
      forecast.map(fore => {

@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/weather.css">
     <title>Document</title>
 </head>
-<body style="text-align: center;">
 
-    <section class="container" style="text-align: center; display: flex; flex-direction: column ; justify-content: center; align-items: center;">
+<body>
+    <header class="headertop">
 
-        
-    
-        <div class="forecastContainer" style="display: flex;align-items: center; gap: 10px; width: 300px; height: 200px; margin-top: 25px; background: red; overflow-x: scroll;">
-             
+        <a id="anchorMaldito" href="https://www.google.com/" target="_blank">
+            <img src="../assets/rocket.png" alt="rocket">
+            <span>go home</span>
+        </a>
+
+    </header>
+    <main class="main-container">
+        <section class="container"
+            style="text-align: center; display: flex; flex-direction: column ; justify-content: center; align-items: center;">
+
+         
+
+            <div class="forecastContainer"
+                style="display: flex;align-items: center; gap: 10px; width: 300px; height: 200px; margin-top: 25px; background: red; overflow-x: scroll;">
+
+                
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-image--container">
+            <a href="./clock.html">
+                <img src="../assets/clock.png" alt="clock-image">
+            </a>
+            <a href="./password.html">
+                <img src="../assets/lock.png" alt="lock-image">
+            </a>
+            <a href="./links.html">
+                <img src="../assets/link.png" alt="link-image">
+            </a>
+            <a href="./weather.html">
+                <img src="../assets/cloud.png" alt="cloud-image">
+            </a>
         </div>
-        
-    </section>
+    </footer>
     <script src="../js/weather.js"></script>
+    <script src="/script.js"></script>
 </body>
+
 </html>
