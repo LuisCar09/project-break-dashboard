@@ -85,11 +85,91 @@ table {
 /* Aqui empieza el main container */
 .main-container{
     height: calc(100vh - 13rem);
+    display: flex;
+    
+}
+.container-weather{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.article-container{
+    max-width: 40rem;
+    max-height: 24rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #33333393;
+}
+.article-title{
+    font-size: 1.6rem;
+    color: #f4f4f4;
+    margin-bottom: .4rem;
+    
+}
+.weather{
+    color: #ffe5c1;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
+.article-features{
+    display: flex;
+    align-items: center;
+    margin-top: .6rem;
+    
+    /* gap: 1rem; */
+}
+.article-features--weather{
+    width: 7rem;
+    height: 7rem;
+    margin-right: 1rem;
+   
+}
+.article-features--title{
+    color: #f4f4f4;
+    font-size: 5rem;
+    margin-right: .4rem;
+    
+}
+.article-features-celcius{
+    text-align: end;
+    height: 3rem;
+    width: 3rem;
+    filter: invert(100%);
+    margin-right: 1rem;
+}
 
-
-
+.article-conditions{
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    
+}
+.article-conditions li{
+    margin-bottom: .4rem;
+    
+}
+.article-container-aside{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    
+    max-height: 10rem;
+    height: 100%;
+}
+.forecast-container{
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.forecast-container img{
+    height: 5.4rem;
+}
 
 
 
