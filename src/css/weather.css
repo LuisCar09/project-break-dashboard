@@ -200,3 +200,26 @@ table {
     width: 3rem;
     height: 3rem;
 }
+
+/* Para navegadores WebKit (Chrome, Safari) */
+/* Define el ancho de la barra */
+::-webkit-scrollbar {
+    height: 6px; 
+}
+
+/* define la pista de la barra es decir el fondo */
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 12px;
+}
+/* aqui le damos el mismo border que la pista para que encaje perfectamente */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 12px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
+ 
