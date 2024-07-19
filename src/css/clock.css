@@ -106,7 +106,9 @@ table {
     padding: 1rem 0rem;
     color:#ffffffb0;
 }
-
+.section-container{
+    margin: 0 auto;
+}
 .main-container-clock article p{
     font-size: 1.8rem;
     margin-bottom: 0.6rem;

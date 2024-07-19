@@ -98,7 +98,7 @@ table {
     max-height: 24rem;
     height: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     border-radius: 1rem;
     background-color: #33333393;
 }
@@ -218,8 +218,5 @@ table {
     border-radius: 12px;
 }
 
-/* ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-} */
 
  
