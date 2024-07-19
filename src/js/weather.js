@@ -13,7 +13,7 @@ const fetchWeather = async () => {
 
 const showWeather = async () => {
     const data = await fetchWeather()
-    console.log(data);
+    
     const dayWeather = {
         city: data.location.name,
         country: data.location.country,

@@ -30,7 +30,7 @@ const saveData = (e) => {
 }
 const showItems = () => {
     const getLocalData = JSON.parse(localStorage.getItem('links'))
-    console.log(getLocalData);
+    
     itemContainer.innerHTML = ''
     getLocalData.forEach((item)=> {
         const {pageName,pageUrl} = item

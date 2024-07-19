@@ -4,7 +4,7 @@ const backgroundPictures = ['https://images.unsplash.com/photo-1485740112426-0c2
 const changeBackground = () => {
     const body = document.body
     const randomNumber = Math.floor(Math.random() * backgroundPictures.length)
-    console.log(randomNumber);
+    
     body.style.backgroundImage = `url(${backgroundPictures[randomNumber]})`
     
 }
