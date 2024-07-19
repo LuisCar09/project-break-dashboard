@@ -323,7 +323,7 @@ table {
 
 
 .password-container{
-    margin: 2rem auto 0 auto;
+    margin: auto auto 0 auto;
     max-width: 40rem;
     
     padding: 1rem 0;
@@ -424,17 +424,17 @@ table {
 
 /* Para navegadores WebKit (Chrome, Safari) */
 /* Define el ancho de la barra */
-::-webkit-scrollbar {
+.article-container ::-webkit-scrollbar {
     height: 6px; 
 }
 
 /* define la pista de la barra es decir el fondo */
-::-webkit-scrollbar-track {
+.article-container ::-webkit-scrollbar-track {
     background: #f4f4f4;
     border-radius: 12px;
 }
 /* aqui le damos el mismo border que la pista para que encaje perfectamente */
-::-webkit-scrollbar-thumb {
+.article-container ::-webkit-scrollbar-thumb {
     background: #555;
     border-radius: 12px;
 }
