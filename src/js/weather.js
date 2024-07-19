@@ -38,7 +38,7 @@ const showWeather = async () => {
                 <div class='article-features' >
                     <img class='article-features--weather' src="${picture}" alt="${weather}-image">
                     <h2 class='article-features--title'>${temperature}</h2>
-                    <img class='article-features-celcius' src="../assets/celsius.png" alt="celcius-degrees">
+                    <img class='article-features-celcius' src="../../src/assets/celsius.png" alt="celcius-degrees">
                     <ul class='article-conditions'>
                         <li class='article-precipitation'>Precipitaciones: ${precipitation}%</li>
                         <li class='article-humidity'> Humidity: ${humidity}%</li>

@@ -7,15 +7,93 @@
     <title>Document</title>
 </head>
 <body>
-   
 
-    
-    <main>
- 
+    <main class="main-container">
+
+        <section class="password-section">
+            
+            <article class="link-container">
+                <div class="title-container">
+                    <h2 class="title-link">A&ntilde;ade tu enlace de inter&eacute;s</h2>
+                    <img src="./src/assets/link.png" alt="link-image">
+                </div>
+                <form class="form-link" action="#" >
+                    <input id="pageName" type="text" placeholder="Nombre de tu enlace" required>
+                    <input id="url" type="text" placeholder="Pega aquí la URL" required>
+                    <input id="inputSubmit" class="inputSubmit" type="submit" value="Añadir enlace" >
+                </form>
+
+                <ul id="link-container--list" class="link-container--list">
+                    
+                        <!-- <li>
+                            <a  href="https://www.instagram.com/" target='_blank'>Ig</a>
+                            <div id="${pageUrl}" class="close">x</div>
+                        </li> -->
+                    
+                </ul>
+            </article>
+                
+        </section>
+        
+        <section class="weather-password-section">
+            
+            <section class="sectionClock-container">
+                <article>
+                    <h2 id="hour"></h2>
+                    <h3 id="date"></h3>
+                    <p id="message" class="message"></p>
+                </article>
+            </section>
+
+            <section class="container-weather">
+
+            </section>
+
+            <article class="password-container">
+                <div class="password-container--top">
+                    <h2>Crea tu contrase&ntilde;a segura</h2>
+                    <img src="./src/assets/lock.png" alt="lock-image">
+                </div>
+                <div class="password-container--button">
+                    <label for="numberInput">Numero de caracteres de la Contraseña</label>
+                    <input id="numberInput" type="number" min="12" max="50" placeholder="12">
+                    <div>
+                        <button id="generateButton" class="generateButton" >Generate password</button>
+                    </div>
+
+                    <div id="password" class="password">
+                        <h3 >Contraseña Generada:</h3>
+                        <p id="passwordText" class="passwordText"></p>
+                    </div>
+                    
+                </div>
+
+            </article>
+
+            <footer class="footer">
+                <div class="footer-image--container">
+                    <a href="./src/components/clock.html">
+                        <img src="./src/assets/clock.png" alt="clock-image">
+                    </a>
+                    <a href="./src/components/password.html">
+                        <img src="./src/assets/lock.png" alt="lock-image">
+                    </a>
+                    <a href="./src/components/links.html">
+                        <img src="./src/assets/link.png" alt="link-image">
+                    </a>
+                    <a href="./src/components/weather.html">
+                        <img src="./src/assets/cloud.png" alt="cloud-image">
+                    </a>
+                </div>
+            </footer>
+        </section>
 
     </main>
 
     <script src="./src/js/passwordGenerator.js"></script>
     <script src="./src/js/weather.js"></script>
+    <script src="./src/js/clock.js"></script>
+    <script src="./src/js/links.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

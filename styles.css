@@ -35,7 +35,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url('https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,40 +56,39 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-main{
+
+
+
+
+/* aqui empieza el main container */
+
+.main-container{
     height: 100vh;
     display: flex;
-    align-items: center;
+    
 }
-
-article{
-    max-width: 1200px;
-    height: 700px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: centers;
-    background-color: red;
-}
-
-.weather{
+.main-container .password-section , .main-container .weather-password-section{
     width: 50%;
-    text-align: center;
-    margin:  auto 0;
-    background-color: blue;
-    height: 300px;
+
 }
 
 
+
+
+/* LINK SECTION */
+.password-section{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
 .link-container{
-    max-width:45rem;
+    max-width:38rem;
     width: 100%;
+    padding: 0 3rem ;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
-
     color: white;
 }
 .title-container{
@@ -100,12 +99,15 @@ article{
     padding: 1rem 0rem;
     margin-bottom: 1.6rem;
 }
+.title-container h2{
+    font-size: 2rem;
+}
 .title-container img{
     filter: invert(100%);
+    width: 2.5rem;
 }
 .title-link{
-    font-size: 2.8rem;
-    letter-spacing: .1rem;
+    font-size: 2rem;
 }
 .link-container form {
     width: 100%;
@@ -113,36 +115,37 @@ article{
     flex-direction: column; 
 }
 .link-container form input{
-    padding: 1rem 0.6rem;
-    font-size: 1.6rem;
+    padding: .8rem 0 0.8rem .5rem;
+    font-size: .9rem;
     margin-bottom: 2rem;
     border-radius: .6rem;
     border: none;
     font-family: inherit;
 }
-/* .link-container form input:focus{
-    outline: none;   
-} */
+
 .inputSubmit{
     background-color: #0371d8;
     color: white;
+    cursor: pointer;
     font-weight: bold;
     transition:all .1s linear;
 }
 
 .inputSubmit:hover{
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 .inputSubmit:active{
     transform: scale(0.99);
 }
 .link-container--list{
     width: 100%;
-    min-height: 400px;
+    min-height: 35rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.4rem;
     padding: 1rem 2rem;
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
 .link-container--list a{
     color: white;
@@ -153,13 +156,14 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: #3333;
-    padding: 1.6rem;
+    padding: 1.2rem;
     border-radius: 0.6rem;
-    min-width: 10rem;
-    max-height: 6rem;
+    min-width: 6rem;
+    max-height: 4rem;
     text-align: center;
+    
 }
 .close{
     position: absolute;
@@ -167,14 +171,270 @@ article{
     justify-content: center;
     align-items: center;
     top: -1rem;
-    right: -1rem;
+    right: -0.5rem;
     background-color: #3333;
-    padding: 0;
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    font-size: 1.6rem;
-    padding: 1rem;
+    font-size: 1rem;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+}
+
+/* aqui empieza section rigth  weather-password-section */
+
+.weather-password-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+/* AQUI EMPIEZA CLOCK SECTION */
+
+.sectionClock-container{
+    margin: 0 auto;
+}
+.sectionClock-container article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    max-height: 20rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+    color:#ffffffb0;
+    background: transparent;
+}
+
+.sectionClock-container article p{
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+}
+
+.sectionClock-container article h2{
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    margin-bottom: 1.2rem;
+}
+.sectionClock-container article h3{
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+
+}
+
+/* AQUI EMPIEZA EL WEATHER SECTION */
+
+.container-weather{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.article-container{
+    max-width: 36rem;
+    max-height: 20rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 1rem;
+    background-color: #33333393;
+}
+.article-title{
+    font-size: 1.2rem;
+    color: #f4f4f4;
+    margin-bottom: .4rem;
+    
+}
+.weather{
+    color: #ffe5c1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.article-features{
+    display: flex;
+    align-items: center;
+    margin-top: .6rem;
+    
+    /* gap: 1rem; */
+}
+.article-features--weather{
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem;
+   
+}
+.article-features--title{
+    color: #f4f4f4;
+    font-size: 3.6rem;
+    margin-right: .4rem;
+    
+}
+.article-features-celcius{
+    text-align: end;
+    height: 2rem;
+    width: 2rem;
+    filter: invert(100%);
+    margin-right: 1rem;
+}
+
+.article-conditions{
+    font-size: 1rem;
+    color: #b0b0b0;
+    
+}
+.article-conditions li{
+    margin-bottom: .4rem;
+    
+}
+.article-container-aside{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    max-height: 7rem;
+    height: 100%;
+    gap: 1rem;
+}
+.forecast-container{
+    color: #f4f4f4;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    
+    
+}
+.forecast-container img{
+    width: 4rem;
+    height: 3.6rem;
+
+}
+
+
+/* Aqui empieza password section */
+
+
+.password-container{
+    margin: 2rem auto 0 auto;
+    max-width: 40rem;
+    
+    padding: 1rem 0;
+    color: white;
+}
+.password-container--top{
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    gap: .6rem;
+    margin-bottom: 1.2rem;
+}
+.password-container--top img{
+    filter: invert(100%);
+    width: 2.2rem;
+    height: 2.2rem;
+    
+}
+.password-container--button{
+    background-color: #33333393;
+    padding: 2rem;
+    text-align: left;
+    border-radius: 1rem;
+    
+}
+.password-container--button label{
+    font-size: 1.2rem;   
+    margin-right: 1rem; 
+}
+.password-container--button input{
+    font-family: inherit;
+    width: 6rem;
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+    border: none;
+    margin-bottom: .6rem;
+}
+.generateButton{
+    padding: 1rem 1rem;
+    background-color: #0371d8;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.generateButton:hover{
+    transform: scale(1.02);
+}
+.generateButton:active{
+    transform: scale(0.99);
+}
+.password{
+    display: none;
+}
+.showPassword{
+    display:block;
+}
+.password h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+.passwordText{
+    font-size: 1.4rem;
+    margin-left: .6rem;
+    color: #ffe5c1;
+    word-wrap: break-word;
+} 
+
+/* AQUI EMPIEZA EL FOOTER */
+
+.footer{
+    height: 6.5rem;
+    padding: 0 1rem 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto 0 0 1rem;
+}
+
+.footer-image--container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    border-bottom: 2px solid white;
+    padding: 0 1rem 1rem 0;
+}
+.footer-image--container img{
+    filter: invert(100%);
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+/* Para navegadores WebKit (Chrome, Safari) */
+/* Define el ancho de la barra */
+::-webkit-scrollbar {
+    height: 6px; 
+}
+
+/* define la pista de la barra es decir el fondo */
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 12px;
+}
+/* aqui le damos el mismo border que la pista para que encaje perfectamente */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 12px;
 }
