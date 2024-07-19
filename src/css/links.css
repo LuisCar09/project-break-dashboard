@@ -92,7 +92,7 @@ table {
 }
 
 .link-container{
-    max-width:45rem;
+    max-width:40rem;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -114,7 +114,7 @@ table {
     filter: invert(100%);
 }
 .title-link{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     letter-spacing: .1rem;
 }
 .link-container form {
@@ -123,8 +123,8 @@ table {
     flex-direction: column; 
 }
 .link-container form input{
-    padding: 1rem 0.6rem;
-    font-size: 1.6rem;
+    padding: .8rem 0.6rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
     border-radius: .6rem;
     border: none;
@@ -148,7 +148,7 @@ table {
 }
 .link-container--list{
     width: 100%;
-    min-height: 400px;
+    min-height: 35rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.4rem;
@@ -163,13 +163,14 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: #3333;
-    padding: 1.6rem;
+    padding: 1.2rem;
     border-radius: 0.6rem;
-    min-width: 10rem;
-    max-height: 6rem;
+    min-width: 6rem;
+    max-height: 4rem;
     text-align: center;
+    
 }
 .close{
     position: absolute;
@@ -177,16 +178,15 @@ table {
     justify-content: center;
     align-items: center;
     top: -1rem;
-    right: -1rem;
+    right: -0.5rem;
     background-color: #3333;
-    padding: 0;
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    font-size: 1.6rem;
-    padding: 1rem;
+    font-size: 1rem;
     color: white;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* Aqui empiza el footer */
