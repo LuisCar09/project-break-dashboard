@@ -1,19 +1,37 @@
 const API = 'https://api.weatherapi.com'
-const apiKey = 'e77691c5fae848ed8b6162904241407'
+const apiKey = '3af9e6f89d9744e6877121522242007'
 const containerWeather = document.querySelector('.container-weather')
 const forecastContainer = document.querySelector('.forecastContainer')
+const gps = navigator.geolocation
+let latitude = ''
+let longitude = ''
 
-const fetchWeather = async () => {
-
-    const getData = await fetch(`${API}/v1/forecast.json?key=${apiKey}&q=Tenerife&aqi=no`)
-    const data = await getData.json()
+const fetchWeather = async (coords) => {
     
-    return data
+    
+   
+
+
+    try {
+        if (coords) {
+            
+            const {latitude,longitude} = coords
+            const getData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&aqi=no`)
+            const data = await getData.json()
+            return data
+        }else{
+            const getData = await fetch(`${API}/v1/forecast.json?key=${apiKey}&q=Tenerife&aqi=no`)
+            const data = await getData.json()
+            return data
+        }
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-const showWeather = async () => {
-    const data = await fetchWeather()
-    
+const showWeather = async (coords) => {
+    const data = await fetchWeather(coords)
+    containerWeather.innerHTML = ''
     const dayWeather = {
         city: data.location.name,
         country: data.location.country,
@@ -68,6 +86,7 @@ const showWeather = async () => {
             
             `
     });
+    
     containerWeather.insertAdjacentHTML('afterbegin',container)
     
     const articleContainer = document.querySelector('.article-container')
@@ -78,17 +97,20 @@ const showWeather = async () => {
     articleContainer.appendChild(aside)
 }
 
-showWeather()
 
-// <div>City: <span class="city">${city}</span></div>
-        // <div>Country: <span class="country">${country}</span></div>
-        // <div>Weather: <span class="weather"></span>${weather}</div>
-        // <div class="picture" style="width: 40px;height: 40px;">
-        //      <img style="width: 100%;height: 100%;"  src="${picture}" alt="${city}-forecast">
-        //      <div class="temperature">${temperature}</div>
-        // </div>
-        // <div>
-        //     <p>Precitation: <span class="precipitation">${precipitation}</span> </p>
-        //     <p>Humidity: <span class="humidity">${humidity}</span></p>
-        //     <p>Wind: <span class="wind">${wind}</span></p>
-        // </div>
+
+
+const sucessLocation = (position) =>{
+    const {latitude,longitude} = position.coords
+    const coords = {latitude,longitude}
+    
+    showWeather(coords)
+    
+}
+
+const errorLocation = (error) => {
+    console.error(error);
+}
+
+gps.getCurrentPosition(sucessLocation,errorLocation)
+showWeather()
