@@ -8,16 +8,14 @@ let longitude = ''
 
 const fetchWeather = async (coords) => {
     
-    
-   
-
 
     try {
         if (coords) {
             
             const {latitude,longitude} = coords
-            const getData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&aqi=no`)
+            const getData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&aqi=no`)
             const data = await getData.json()
+            console.log(data);
             return data
         }else{
             const getData = await fetch(`${API}/v1/forecast.json?key=${apiKey}&q=Tenerife&aqi=no`)

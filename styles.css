@@ -67,7 +67,7 @@ table {
     display: flex;
     
 }
-.main-container .password-section , .main-container .weather-password-section{
+.main-container .link-section , .main-container .weather-password-section{
     width: 50%;
 
 }
@@ -76,7 +76,7 @@ table {
 
 
 /* LINK SECTION */
-.password-section{
+.link-section{
     display: flex;
     align-items: center;
     padding-top: 2rem;
@@ -154,6 +154,7 @@ table {
 .link-container--list li{
     position: relative;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
@@ -163,6 +164,7 @@ table {
     min-width: 6rem;
     max-height: 4rem;
     text-align: center;
+    gap: .3rem;
     
 }
 .close{
