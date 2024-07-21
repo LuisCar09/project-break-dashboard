@@ -9,20 +9,21 @@ const timeFormtOptions = {
     hour12: false
 }
 const getHour = () => {
-    const dayDate = new Date()
-    const dateEnglishBritain = dayDate.toLocaleDateString('en-GB')
-    const currentTime = (dayDate.getHours() * 100) + dayDate.getMinutes()
+    const dayDate = new Date() //obtemmos la fecha
+    const dateEnglishBritain = dayDate.toLocaleDateString('en-GB') // obtenemos el date pasando el GB parametro para obtener la fecha formato 01/07/2024
+    const currentTime = (dayDate.getHours() * 100) + dayDate.getMinutes() // obtenemos el tiempo convirtiendolo en numeros
     
     
-    dateContainer.innerText = dateEnglishBritain
+    dateContainer.innerText = dateEnglishBritain // renderizamos la fecha
      
     if (!mainContainer ) {
-       message.innerText = getMessage(currentTime)
+       message.innerText = getMessage(currentTime) // insertamos los mensajes si no estamos en la contenedor que muestra todos las section
     }
-    const updateHour = dayDate.toLocaleTimeString('en-GB',timeFormtOptions)
-    hourContainer.innerHTML = updateHour
+    const updateHour = dayDate.toLocaleTimeString('en-GB',timeFormtOptions) //Obtenemos la hora en 24:00 formato
+    hourContainer.innerHTML = updateHour //actualizamos la hora
 }
 
+//Devolver un mensaje de acuerdo al la hora
 const getMessage = (currentTime) => {
     
     if (currentTime > 0 && currentTime <= 700) {
@@ -44,8 +45,8 @@ const getMessage = (currentTime) => {
 
 
 
-getHour()
-setInterval(getHour,1000)
+getHour()//Inicialziacion
+setInterval(getHour,1000)//Llamamos a la funcion cada segundo para actualizar la hora
 
 // Aparecerán unas frases dependiendo un intervalo de horas. Doy una de ejemplo aunque puedes cambiarlas a tu gusto:
 // Desde las 00:01 hasta las 07:00 Es hora de descansar. Apaga y sigue mañana
