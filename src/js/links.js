@@ -83,22 +83,3 @@ showItems()//Iniciamos el script
 
 
 
-
-
-
-
-const loadItems = () => {
-    const getLocalData = JSON.parse(localStorage.getItem('links'))
-    console.log('fasfas');
-    getLocalData.forEach((item)=> {
-        const {pageName,pageUrl} = item
-        itemContainer.innerHTML += `<li>
-                                        <a  href="${pageUrl}" target='_blank'>${pageName}</a>
-                                        <div id="${pageUrl}" class="close">x</div>
-                                    </li>`
-    })
-    const deleteButton = document.querySelectorAll('.close')
-    deleteButton.forEach(butt => butt.addEventListener('click',(e) => {
-        deleteItem(e)
-    }))
-}
