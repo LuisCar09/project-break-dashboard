@@ -6,7 +6,7 @@ const capitalizeLetters = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 const lowerCase = [...'abcdefghijklmnopqrstuvwxyz'];
 const numbers = [...'0123456789'];
 const simbols = [...'!@#$%^&*()-_=+'];
-const allCharacterSets = [capitalizeLetters,lowerCase,numbers,simbols]
+const allCharacterSets = [capitalizeLetters,lowerCase,numbgiers,simbols]
 
 
 const randomNumber = (max) => Math.floor(Math.random() * max) //Obtenemos el numero random
@@ -15,6 +15,7 @@ const randomNumber = (max) => Math.floor(Math.random() * max) //Obtenemos el num
 const generatePassword = () => {
     
     const allCharacters = allCharacterSets.flat()//Aplanamos los array para dejar un array juntos
+    
     const number = numberInput.value //obtenemos el valor del input
     const password = [] //almacenaremos el password
     

@@ -33,7 +33,7 @@ const getMessage = (currentTime) => {
     } else if (currentTime > 1200 && currentTime <= 1400) {
         return  'Echa un rato más pero no olvides comer.'
     } else if (currentTime > 1400 && currentTime <= 1600 ) {
-        message.innerText = 'Espero que hayas comido.'
+       return  message.innerText = 'Espero que hayas comido.'
     } else if (currentTime > 1600 && currentTime <= 1800) {
         return  'Buenas tardes, el último empujón.'
     } else if (currentTime > 1800 && currentTime <= 2000) {
