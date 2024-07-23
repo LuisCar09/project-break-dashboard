@@ -2,10 +2,11 @@ const API = 'https://api.weatherapi.com'
 const apiKey = '3af9e6f89d9744e6877121522242007'
 const containerWeather = document.querySelector('.container-weather')
 const forecastContainer = document.querySelector('.forecastContainer')
+const mainIndexContainer = document.querySelector('.main-container') //Contenedor del index.html
 const gps = navigator.geolocation //Creamos la geolocalizacion 
 let latitude = ''
 let longitude = ''
-
+// ./src/assets/celsius.png // ../../src/assets/celsius.png
 const fetchWeather = async (coords) => {
     
     try {
@@ -57,7 +58,7 @@ const showWeather = async (coords) => {
                 <div class='article-features' >
                     <img class='article-features--weather' src="${picture}" alt="${weather}-image">
                     <h2 class='article-features--title'>${temperature}</h2>
-                    <img class='article-features-celcius' src="../../src/assets/celsius.png" alt="celcius-degrees">
+                    <img class='article-features-celcius' src="${!mainIndexContainer ? '../../src/assets/celsius.png' : './src/assets/celsius.png '}" alt="celcius-degrees">
                     <ul class='article-conditions'>
                         <li class='article-precipitation'>Precipitaciones: ${precipitation}%</li>
                         <li class='article-humidity'> Humidity: ${humidity}%</li>

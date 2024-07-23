@@ -83,7 +83,7 @@ table {
 
 
 /* Aqui empieza el main container */
-.main-container{
+.mainContainer{
     height: calc(100vh - 13rem);
     display: flex;
     
