@@ -236,8 +236,8 @@ table {
     
 }
 .article-container{
-    max-width: 36rem;
-    max-height: 20rem;
+    max-width: 40rem;
+    max-height: 24rem;
     height: 100%;
     margin: 0 auto;
     padding: 2rem 2rem 3rem 2rem;
@@ -245,14 +245,14 @@ table {
     background-color: #33333393;
 }
 .article-title{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #f4f4f4;
     margin-bottom: .4rem;
     
 }
 .weather{
     color: #ffe5c1;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
     margin: 0 auto;
 }
@@ -261,63 +261,60 @@ table {
     display: flex;
     align-items: center;
     margin-top: .6rem;
-    
-    /* gap: 1rem; */
+
 }
 .article-features--weather{
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     margin-right: 1rem;
    
 }
 .article-features--title{
     color: #f4f4f4;
-    font-size: 3.6rem;
+    font-size: 5rem;
     margin-right: .4rem;
     
 }
 .article-features-celcius{
     text-align: end;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     filter: invert(100%);
     margin-right: 1rem;
 }
 
 .article-conditions{
-    font-size: 1rem;
-    color: #b0b0b0;
-    
+    color: #b0b0b0;    
 }
 .article-conditions li{
     margin-bottom: .4rem;
-    
+    font-size: 1.2rem;
 }
 .article-container-aside{
     display: flex;
     align-items: center;
     overflow-x: auto;
-    max-height: 7rem;
+    max-height: 10rem;
     height: 100%;
-    gap: 1rem;
 }
 .forecast-container{
     color: #f4f4f4;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    
-    
+
 }
 .forecast-container img{
-    width: 4rem;
-    height: 3.6rem;
+    width: 5.4rem;
+    height: 5.4rem;
 
 }
+.forecast-container p{
+    font-size: 1.2rem;
 
+}
 
 /* Aqui empieza password section */
 
@@ -325,17 +322,18 @@ table {
 .password-container{
     margin: auto auto 0 auto;
     max-width: 40rem;
-    
     padding: 1rem 0;
     color: white;
 }
 .password-container--top{
     display: flex;
     align-items: flex-end;
-    font-size: 1.4rem;
     letter-spacing: .1rem;
     gap: .6rem;
     margin-bottom: 1.2rem;
+}
+.password-container--top h2{
+    font-size: 2rem;
 }
 .password-container--top img{
     filter: invert(100%);
@@ -351,7 +349,7 @@ table {
     
 }
 .password-container--button label{
-    font-size: 1.2rem;   
+    font-size: 1.4rem;   
     margin-right: 1rem; 
 }
 .password-container--button input{
@@ -368,7 +366,7 @@ table {
     color: white;
     border: none;
     border-radius: .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     cursor: pointer;
     transition: all .2s linear;
 }
@@ -385,12 +383,12 @@ table {
     display:block;
 }
 .password h3{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: .6rem;
 }
 .passwordText{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-left: .6rem;
     color: #ffe5c1;
     word-wrap: break-word;
@@ -418,8 +416,8 @@ table {
 }
 .footer-image--container img{
     filter: invert(100%);
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 /* Para navegadores WebKit (Chrome, Safari) */

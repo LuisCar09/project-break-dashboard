@@ -6,7 +6,7 @@ const capitalizeLetters = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 const lowerCase = [...'abcdefghijklmnopqrstuvwxyz'];
 const numbers = [...'0123456789'];
 const simbols = [...'!@#$%^&*()-_=+'];
-const allCharacterSets = [capitalizeLetters,lowerCase,numbgiers,simbols]
+const allCharacterSets = [capitalizeLetters,lowerCase,numbers,simbols]
 
 
 const randomNumber = (max) => Math.floor(Math.random() * max) //Obtenemos el numero random
@@ -24,6 +24,7 @@ const generatePassword = () => {
         for (let i = 0; i < number; i++) {
             const random = randomNumber(allCharacters.length)
             i < allCharacterSets.length ? password.push(getCharacterFromSet(allCharacterSets[i])) : password.push(allCharacters[random])   //inyeccion del password
+    
     }
     return password.join('') //retornamosla password unida con el metodo join
 } 
@@ -37,7 +38,7 @@ const getCharacterFromSet = (charactersSet) => {
 }
 const renderPassword = () => {
     const strongPassword = generatePassword() //recibimos la contrasena
-    if (showPassword) {
+    if (strongPassword) {
         passwordText.innerText = strongPassword // mostramos la contrasena
         showPassword.classList.add('showPassword') //agregamos clase para mostrarla
     }
